@@ -13,10 +13,15 @@
         feedbackCard3: null,
         feedbackCount: 1,
 
+        burgerElement: null,
+        closeElement: null,
+        headerElement: null,
+
         init() {
 
             this.feedbackSlider();
             this.gallerySlider();
+            this.burger();
         },
         //Слайдер отзывов
         feedbackSlider() {
@@ -56,6 +61,7 @@
                 this.feedbackPoint.eq(this.feedbackCount).addClass("active__point");
             })
         },
+
         //Слайдер фотографий
         gallerySlider() {
             this.galleryPoint = $('.slider__points__item2');
@@ -94,6 +100,29 @@
                 that.galleryPoint.eq(that.galleryCount).addClass("active__point");
                 that.galleryImage.attr("src", "imgs/" + (that.galleryCount + 1) + ".png");
             })
+        },
+
+        //Нажатие на бургер и закрытие его
+        burger() {
+            this.burgerElement = $('#burger');
+            this.closeElement = $('#close');
+            this.navElement = $('.header__nav-item');
+
+            this.closeElement.click(() => {
+                $('.header__nav-items').eq(0).css('display', 'none');
+                $('.header__contacts').eq(0).css('display', 'none');
+            })
+            this.burgerElement.click(() => {
+                $('.header__nav-items').css('display', 'block');
+                $('.header__contacts').css('display', 'block');
+            })
+
+            for (let i = 0; i < this.navElement.length; i++) {
+                this.navElement[i].addEventListener("click", function() {
+                    $('.header__nav-items').css('display', 'none');
+                    $('.header__contacts').css('display', 'none');
+                });
+            }
         },
     }
 

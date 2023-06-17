@@ -26,6 +26,13 @@
             </svg>
         </div>
         <div class="header__nav-items">
+            <div id="close" class="close">
+                <div class="close_cover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.76968 0.303612C1.36486 -0.101204 0.708519 -0.101204 0.3037 0.303613C-0.101118 0.70843 -0.101118 1.36477 0.3037 1.76958L6.53413 7.99999L0.303614 14.2305C-0.101205 14.6353 -0.101204 15.2916 0.303614 15.6964C0.708433 16.1013 1.36477 16.1013 1.76959 15.6964L8.00011 9.46596L14.2305 15.6963C14.6353 16.1011 15.2917 16.1011 15.6965 15.6963C16.1013 15.2915 16.1013 14.6352 15.6965 14.2303L9.46609 7.99999L15.6964 1.76971C16.1012 1.3649 16.1012 0.708557 15.6964 0.30374C15.2916 -0.101076 14.6352 -0.101077 14.2304 0.30374L8.00011 6.53401L1.76968 0.303612Z" fill="#E2ECF0"/>
+                </svg>
+                </div>
+            </div>
             <div class="header__nav-item" id="services">Услуги</div>
             <div class="header__nav-item" id="reviews">Отзывы</div>
             <div class="header__nav-item" id="contacts">Контакты</div>
@@ -39,6 +46,11 @@
                 <div class="header__contacts__a1__num">+375 (44) 790 91 60</div>
                 <img src="imgs/A1.png" alt="Значок А1" class="provider-number">
             </div>
+        </div>
+        <div id="burger" class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H19C19.5523 0 20 0.447715 20 1C20 1.55228 19.5523 2 19 2H1C0.447715 2 0 1.55228 0 1ZM0 8C0 7.44772 0.447715 7 1 7H19C19.5523 7 20 7.44772 20 8C20 8.55229 19.5523 9 19 9H1C0.447715 9 0 8.55229 0 8ZM1 14C0.447715 14 0 14.4477 0 15C0 15.5523 0.447715 16 1 16H19C19.5523 16 20 15.5523 20 15C20 14.4477 19.5523 14 19 14H1Z" fill="#E2ECF0"/>
+            </svg>
         </div>
     </div>
 </header>
@@ -496,11 +508,11 @@
                               stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
+
                 <div class="photo__slider__photo">
-                    <div class="photo__slider__photo__item">
-                        <img class="gallery-image" src="imgs/1.png" alt="">
-                    </div>
+                    <img class="gallery-image" src="imgs/1.png" alt="">
                 </div>
+
                 <div class="photo__slider__arrow-next" id="next">
                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34"
                          fill="none">
@@ -526,6 +538,7 @@
 
     <section class="map">
         <div class="container map__container">
+            <div class="map__second__title">Наши контакты</div>
             <div class="map__address">
                 <div class="map__address__title">Наши контакты</div>
                 <div class="map__address__graphic">
@@ -538,11 +551,11 @@
                     <div class="map__address__post-title">Телефоны:</div>
                     <div class="phones__mts">
                         <div class="map-text map__address__phones__mts__num">+375 (29) 898 25 05</div>
-                        <img src="/imgs/MTC.png" alt="Значок МТС" class="provider-number">
+                        <img src="imgs/MTC.png" alt="Значок МТС" class="provider-number">
                     </div>
                     <div class="phones__a1">
                         <div class="map-text map__address__phones__a1__num">+375 (44) 790 91 60</div>
-                        <img src="/imgs/A1.png" alt="Значок А1" class="provider-number">
+                        <img src="imgs/A1.png" alt="Значок А1" class="provider-number">
                     </div>
                 </div>
                 <div class="map__address__address">
@@ -550,6 +563,9 @@
                     <div class="map-text map__address__address__text1">г. Витебск, ул. Лазо, 115</div>
                     <div class="map-text map__address__address__text2">(напротив Витебской таможни)</div>
                 </div>
+            </div>
+            <div class="map__map">
+                <img src="imgs/map.png" alt="">
             </div>
         </div>
     </section>
@@ -567,7 +583,16 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class="footer__logo">
-            <svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" width="247" height="41" viewBox="0 0 247 41"
+            <svg class="logo__svg1" xmlns="http://www.w3.org/2000/svg" width="247" height="41" viewBox="0 0 247 41"
+                 fill="none">
+                <rect width="79" height="41" fill="#C60000"/>
+                <rect x="79" width="168" height="41" fill="black"/>
+                <path d="M100.51 32L99.082 27.716H89.596L88.168 32H83.102L91.432 8.2H97.246L105.61 32H100.51ZM91.092 23.33H97.62L94.356 13.606L91.092 23.33ZM122.643 8.2H127.301V32H122.643V22.14H113.803V32H109.111V8.2H113.803V17.652H122.643V8.2ZM148.654 8.2V12.688H142.228V32H137.536V12.688H131.144V8.2H148.654ZM166.234 32V17.482L156.034 32H152.464V8.2H157.156V22.752L167.356 8.2H170.926V32H166.234ZM195.129 32H189.723L181.223 20.848V32H176.531V8.2H181.223V18.706L189.383 8.2H194.789L185.983 19.76L195.129 32ZM216.639 28.906C214.236 31.286 211.312 32.476 207.867 32.476C204.422 32.476 201.498 31.286 199.095 28.906C196.715 26.5033 195.525 23.568 195.525 20.1C195.525 16.632 196.715 13.708 199.095 11.328C201.498 8.92533 204.422 7.724 207.867 7.724C211.312 7.724 214.236 8.92533 216.639 11.328C219.042 13.708 220.243 16.632 220.243 20.1C220.243 23.568 219.042 26.5033 216.639 28.906ZM202.393 25.71C203.866 27.1607 205.691 27.886 207.867 27.886C210.043 27.886 211.868 27.1607 213.341 25.71C214.814 24.2367 215.551 22.3667 215.551 20.1C215.551 17.8333 214.814 15.9633 213.341 14.49C211.868 13.0167 210.043 12.28 207.867 12.28C205.691 12.28 203.866 13.0167 202.393 14.49C200.92 15.9633 200.183 17.8333 200.183 20.1C200.183 22.3667 200.92 24.2367 202.393 25.71ZM233.605 8.2C235.894 8.2 237.821 8.97067 239.385 10.512C240.949 12.0533 241.731 13.946 241.731 16.19C241.731 18.434 240.949 20.3267 239.385 21.868C237.821 23.4093 235.894 24.18 233.605 24.18H229.423V32H224.731V8.2H233.605ZM233.605 19.794C234.602 19.794 235.43 19.454 236.087 18.774C236.744 18.0713 237.073 17.21 237.073 16.19C237.073 15.1473 236.744 14.286 236.087 13.606C235.43 12.926 234.602 12.586 233.605 12.586H229.423V19.794H233.605Z"
+                      fill="#E2ECF0"/>
+                <path d="M17.498 32.476C13.9167 32.476 10.9587 31.286 8.624 28.906C6.28933 26.526 5.122 23.5907 5.122 20.1C5.122 16.5867 6.28933 13.6513 8.624 11.294C10.9587 8.914 13.9167 7.724 17.498 7.724C19.6513 7.724 21.6347 8.234 23.448 9.254C25.284 10.2513 26.712 11.6113 27.732 13.334L23.686 15.68C23.0967 14.6147 22.258 13.7873 21.17 13.198C20.082 12.586 18.858 12.28 17.498 12.28C15.186 12.28 13.316 13.0053 11.888 14.456C10.4827 15.9067 9.78 17.788 9.78 20.1C9.78 22.3893 10.4827 24.2593 11.888 25.71C13.316 27.1607 15.186 27.886 17.498 27.886C18.858 27.886 20.082 27.5913 21.17 27.002C22.2807 26.39 23.1193 25.5627 23.686 24.52L27.732 26.866C26.712 28.5887 25.2953 29.96 23.482 30.98C21.6687 31.9773 19.674 32.476 17.498 32.476ZM47.4467 8.2V12.688H41.0207V32H36.3287V12.688H29.9367V8.2H47.4467ZM69.9207 28.906C67.518 31.286 64.594 32.476 61.1487 32.476C57.7034 32.476 54.7794 31.286 52.3767 28.906C49.9967 26.5033 48.8067 23.568 48.8067 20.1C48.8067 16.632 49.9967 13.708 52.3767 11.328C54.7794 8.92533 57.7034 7.724 61.1487 7.724C64.594 7.724 67.518 8.92533 69.9207 11.328C72.3234 13.708 73.5247 16.632 73.5247 20.1C73.5247 23.568 72.3234 26.5033 69.9207 28.906ZM55.6747 25.71C57.148 27.1607 58.9727 27.886 61.1487 27.886C63.3247 27.886 65.1494 27.1607 66.6227 25.71C68.096 24.2367 68.8327 22.3667 68.8327 20.1C68.8327 17.8333 68.096 15.9633 66.6227 14.49C65.1494 13.0167 63.3247 12.28 61.1487 12.28C58.9727 12.28 57.148 13.0167 55.6747 14.49C54.2014 15.9633 53.4647 17.8333 53.4647 20.1C53.4647 22.3667 54.2014 24.2367 55.6747 25.71Z"
+                      fill="#E2ECF0"/>
+            </svg>
+            <svg class="logo__svg2" xmlns="http://www.w3.org/2000/svg" width="100" height="17" viewBox="0 0 247 41"
                  fill="none">
                 <rect width="79" height="41" fill="#C60000"/>
                 <rect x="79" width="168" height="41" fill="black"/>
@@ -585,11 +610,11 @@
             <div class="footer__right-content__contacts">
                 <div class="phones__mts">
                     <div class="header__contacts__mts__num">+375 (29) 898 25 05</div>
-                    <img src="/imgs/MTC.png" alt="Значок МТС" class="provider-number">
+                    <img src="imgs/MTC.png" alt="Значок МТС" class="provider-number">
                 </div>
                 <div class="phones__a1">
                     <div class="header__contacts__a1__num">+375 (44) 790 91 60</div>
-                    <img src="/imgs/A1.png" alt="Значок А1" class="provider-number">
+                    <img src="imgs/A1.png" alt="Значок А1" class="provider-number">
                 </div>
             </div>
         </div>

@@ -90,6 +90,16 @@ body {
     color: #E2ECF0;
 }
 
+.burger {
+    display: none;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.close {
+    display: none;
+}
+
 
 /*start 1 block --------------------------------------------------------*/
 .start {
@@ -790,6 +800,20 @@ input[type=radio] {
     position: relative;
 }
 
+.map__second__title {
+    display: none;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #E2ECF0;
+
+}
+
+.map__map {
+    display: none;
+}
+
 .map__address {
     margin-top: 130px;
     background: #1C2329;
@@ -842,6 +866,10 @@ input[type=radio] {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo__svg2 {
+    display: none;
 }
 
 .footer__rights {
