@@ -26,16 +26,21 @@
             </svg>
         </div>
         <div class="header__nav-items">
-            <div id="close" class="close">
-                <div class="close_cover">
+            <div class="header__nav-item" id="services">Услуги</div>
+            <div class="header__nav-item" id="reviews">Отзывы</div>
+            <div class="header__nav-item" id="contacts">Контакты</div>
+        </div>
+        <div class="header__nav-items2">
+            <div class="close">
+                <div id="close" class="close_cover">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.76968 0.303612C1.36486 -0.101204 0.708519 -0.101204 0.3037 0.303613C-0.101118 0.70843 -0.101118 1.36477 0.3037 1.76958L6.53413 7.99999L0.303614 14.2305C-0.101205 14.6353 -0.101204 15.2916 0.303614 15.6964C0.708433 16.1013 1.36477 16.1013 1.76959 15.6964L8.00011 9.46596L14.2305 15.6963C14.6353 16.1011 15.2917 16.1011 15.6965 15.6963C16.1013 15.2915 16.1013 14.6352 15.6965 14.2303L9.46609 7.99999L15.6964 1.76971C16.1012 1.3649 16.1012 0.708557 15.6964 0.30374C15.2916 -0.101076 14.6352 -0.101077 14.2304 0.30374L8.00011 6.53401L1.76968 0.303612Z" fill="#E2ECF0"/>
                 </svg>
                 </div>
             </div>
-            <div class="header__nav-item" id="services">Услуги</div>
-            <div class="header__nav-item" id="reviews">Отзывы</div>
-            <div class="header__nav-item" id="contacts">Контакты</div>
+            <div class="header__nav-item2" id="services2">Услуги</div>
+            <div class="header__nav-item2" id="reviews2">Отзывы</div>
+            <div class="header__nav-item2" id="contacts2">Контакты</div>
         </div>
         <div class="header__contacts">
             <div class="phones__mts">
@@ -224,7 +229,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="service" class="services">
         <div class="container services__container">
             <div class="services__title">
                 Наши услуги
@@ -304,7 +309,7 @@
         </div>
     </section>
 
-    <section class="feedback">
+    <section id="feedback" class="feedback">
         <div class="container feedback__container">
             <div class="feedback__title">Отзывы наших клиентов</div>
             <input class="card1 card__input" type="radio" name="slider" id="item-1">
@@ -475,6 +480,9 @@
         <div class="form__left-image">
             <img src="imgs/firstForm.png" alt="" class="form__left-image__img">
         </div>
+        <div class="form__another-image-form">
+            <img src="imgs/anotherImageForm.png" alt="" class="form__another-image-form__img">
+        </div>
         <div class="container form__container">
             <div class="form__main">
                 <div class="form__main__title">
@@ -536,7 +544,7 @@
         </div>
     </section>
 
-    <section class="map">
+    <section id="map" class="map">
         <div class="container map__container">
             <div class="map__second__title">Наши контакты</div>
             <div class="map__address">
@@ -621,6 +629,11 @@
     </div>
 </footer>
 
+<div class="go-up" id="go-up">
+    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="22" viewBox="0 0 39 22" fill="none">
+        <path opacity="0.8" d="M1.60123 21.1135C2.12865 21.6407 2.8439 21.9369 3.58967 21.9369C4.33544 21.9369 5.05069 21.6407 5.57811 21.1135L19.5 7.19161L33.4219 21.1135C33.9523 21.6258 34.6627 21.9093 35.4002 21.9029C36.1376 21.8965 36.843 21.6007 37.3645 21.0792C37.8859 20.5578 38.1817 19.8524 38.1881 19.1149C38.1945 18.3775 37.9111 17.6671 37.3987 17.1366L21.4884 1.22629C20.961 0.699031 20.2458 0.402832 19.5 0.402832C18.7542 0.402832 18.039 0.699031 17.5115 1.22629L1.60123 17.1366C1.07397 17.664 0.777771 18.3793 0.777771 19.125C0.777771 19.8708 1.07397 20.5861 1.60123 21.1135Z" fill="#E2ECF0"/>
+    </svg>
+</div>
 
 <script src="scripts/jquery-3.6.4.min.js"></script>
 <script src="scripts/index.js"></script>

@@ -9,6 +9,15 @@
         grid-row-gap: 10px;
     }
 
+    .form__another-image-form {
+        text-align: center;
+        display: block;
+    }
+
+    .form__main__title {
+        margin-top: 20px;
+    }
+
     .what-is-this__main__item {
         padding: 30px;
     }
@@ -308,6 +317,10 @@
         top: 361px;
         left: -6px;
     }
+
+    .go-up {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -378,16 +391,6 @@
 @media screen and (max-width: 560px) {
     .header__nav-items {
         display: none;
-        flex-direction: column;
-        position: fixed;
-        background: #1F272F;
-        width: 100%;
-        height: 100%;
-        z-index: 10000;
-        justify-content: unset  ;
-        top: 0;
-        left: 0;
-        align-items: center;
     }
     .close {
         display: block;
@@ -401,23 +404,11 @@
         right: 15px;
         top: 30px;
     }
-    .header__nav-item {
-        padding: 27px 0;
+    .header__nav-items2 {
         margin-left: 0;
-        cursor: pointer;
-        font-size: 25px;
-        border-bottom: 1px solid #E2ECF0;
-        text-align: center;
         width: 100%;
     }
-    .header__nav-item:hover {
-        padding: 27px 0;
-        margin-left: 0;
-        cursor: pointer;
-        font-size: 25px;
-        border-bottom: 1px solid #E2ECF0;
-        text-align: center;
-        width: 100%;
+    .header__nav-item2:hover {
         color: #FF6642;
     }
     .burger {
@@ -468,18 +459,15 @@
         padding-bottom: 100px;
         background: #1C2329;
     }
-
     .what-is-this__main {
         grid-template-columns: 1fr;
         grid-template-rows: 200px 350px 200px;
         grid-row-gap: 10px;
     }
-
     .what-is-this__main__item:nth-child(2) .what-is-this__main__item__num {
         top: 207px;
         left: -11px;
     }
-
     .what-is-this__main__item:nth-child(3) .what-is-this__main__item__num {
         top: 564px;
         left: -6px;

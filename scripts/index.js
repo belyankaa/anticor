@@ -22,6 +22,7 @@
             this.feedbackSlider();
             this.gallerySlider();
             this.burger();
+            this.scroll();
         },
         //Слайдер отзывов
         feedbackSlider() {
@@ -102,27 +103,67 @@
             })
         },
 
-        //Нажатие на бургер и закрытие его
+        scroll() {
+            $('#services').on('click', function () {
+                $('html').animate({
+                        scrollTop: $('#service').offset().top
+                    }, 800);
+            });
+            $('#reviews').on('click', function () {
+                $('html').animate({
+                        scrollTop: $('#feedback').offset().top
+                    }, 800);
+            });
+            $('#contacts').on('click', function () {
+                $('html').animate({
+                        scrollTop: $('#map').offset().top
+                    }, 800);
+            });
+
+            $('#go-up').on('click', function () {
+                $('html').animate({
+                    scrollTop: $('body').offset().top
+                }, 800);
+            });
+        },
+
+        //Нажатие на бургер и закрытие его, работа элементов навигации бургера
         burger() {
             this.burgerElement = $('#burger');
             this.closeElement = $('#close');
-            this.navElement = $('.header__nav-item');
+            this.navElement = $('.header__nav-item2');
 
             this.closeElement.click(() => {
-                $('.header__nav-items').eq(0).css('display', 'none');
-                $('.header__contacts').eq(0).css('display', 'none');
+                $('.header__nav-items2').eq(0).css('display', 'none');
+                $('.header__contact').eq(0).css('display', 'none');
             })
             this.burgerElement.click(() => {
-                $('.header__nav-items').css('display', 'block');
+                $('.header__nav-items2').css('display', 'block');
                 $('.header__contacts').css('display', 'block');
             })
 
             for (let i = 0; i < this.navElement.length; i++) {
                 this.navElement[i].addEventListener("click", function() {
-                    $('.header__nav-items').css('display', 'none');
+                    $('.header__nav-items2').css('display', 'none');
                     $('.header__contacts').css('display', 'none');
                 });
             }
+
+            $('#services2').on('click', function () {
+                $('html').animate({
+                    scrollTop: $('#service').offset().top
+                }, 800);
+            });
+            $('#reviews2').on('click', function () {
+                $('html').animate({
+                    scrollTop: $('#feedback').offset().top
+                }, 800);
+            });
+            $('#contacts2').on('click', function () {
+                $('html').animate({
+                    scrollTop: $('#map').offset().top
+                }, 800);
+            });
         },
     }
 
